@@ -1,0 +1,10 @@
+^C:\USERS\PIOTR\DESKTOP\STUDIA\6SEM\PDM\TS_PARSER_S0\BUILD\CMAKEFILES\5F9FB916C906F011B1756454625B9BC6\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/piotr/Desktop/studia/6sem/PDM/TS_parser_S0 -BC:/Users/piotr/Desktop/studia/6sem/PDM/TS_parser_S0/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/piotr/Desktop/studia/6sem/PDM/TS_parser_S0/build/TS-PARSER.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
